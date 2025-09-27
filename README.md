@@ -8,7 +8,8 @@ Custom KDE Plasma splash screen with the Framework logo instead of KDE's default
 
 ### Prerequisites
 
-- KDE Plasma 5.24 or later
+Tested with:
+- KDE Plasma 6.3.6
 - `gzip` (I think this is required for svgz, usually pre-installed on most Linux distributions)
 
 ### Quick Install
