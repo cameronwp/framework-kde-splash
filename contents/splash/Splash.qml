@@ -30,28 +30,28 @@ Rectangle {
 		anchors.fill: parent
 		opacity: 0
 
-	Image {
-		id: logo
-		anchors.centerIn: parent
-		asynchronous: true
-		source: "images/framework.svgz"
-		fillMode: Image.PreserveAspectFit
-		width: Kirigami.Units.gridUnit * 36
-		height: Kirigami.Units.gridUnit * 36
-		// The fillMode will preserve aspect ratio and fit within these bounds
-	}
+		Image {
+			id: logo
+			anchors.centerIn: parent
+			asynchronous: true
+			source: "images/framework.svgz"
+			fillMode: Image.PreserveAspectFit
+			width: Kirigami.Units.gridUnit * 36
+			height: Kirigami.Units.gridUnit * 36
+			// The fillMode will preserve aspect ratio and fit within these bounds
+		}
 
 
-	// KDE's built-in busy indicator
-	PlasmaComponents3.BusyIndicator {
-		id: busyIndicator
-		// Position in the middle of the remaining space below the logo
-		y: parent.height - (parent.height - logo.y) / 2
-		anchors.horizontalCenter: parent.horizontalCenter
-		width: Kirigami.Units.gridUnit * 2
-		height: Kirigami.Units.gridUnit * 2
-		// running: true (enabled by default)
-	}
+		// KDE's built-in busy indicator
+		PlasmaComponents3.BusyIndicator {
+			id: busyIndicator
+			// Position in the middle of the remaining space below the logo
+			y: parent.height - (parent.height - logo.y) / 2
+			anchors.horizontalCenter: parent.horizontalCenter
+			width: Kirigami.Units.gridUnit * 2
+			height: Kirigami.Units.gridUnit * 2
+			// running: true (enabled by default)
+		}
 	}
 
 	OpacityAnimator {
