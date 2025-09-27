@@ -50,4 +50,4 @@ If you encounter any issues, please [open an issue](https://github.com/dblanque/
 
 ---
 
-**Made with ❤️ for Framework laptop users running KDE Plasma**
+**Made with 💙 for Framework Laptops**
