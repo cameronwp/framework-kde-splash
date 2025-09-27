@@ -1,6 +1,7 @@
 # Framework KDE Splash Theme
 
-Custom KDE Plasma splash screen with the Framework logo instead of KDE's default. Has the default spinning gear animation.
+Custom KDE Plasma splash screen with the Framework logo instead of KDE's default.
+Has the new default loading animation of plasmacomponents3.
 
 ![Framework KDE Splash Preview](contents/previews/splash.png)
 
