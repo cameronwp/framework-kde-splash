@@ -48,8 +48,8 @@ Rectangle {
 			// Position in the middle of the remaining space below the logo
 			y: parent.height - (parent.height - logo.y) / 2
 			anchors.horizontalCenter: parent.horizontalCenter
-			width: Kirigami.Units.gridUnit * 2
-			height: Kirigami.Units.gridUnit * 2
+			width: Kirigami.Units.gridUnit * 3
+			height: Kirigami.Units.gridUnit * 3
 			// running: true (enabled by default)
 		}
 	}
