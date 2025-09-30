@@ -32,13 +32,14 @@ Rectangle {
 
 		Image {
 			id: logo
+			readonly property real size: Kirigami.Units.gridUnit * 6
 			anchors.centerIn: parent
 			asynchronous: true
-			source: "images/framework.svgz"
-			fillMode: Image.PreserveAspectFit
-			width: Kirigami.Units.gridUnit * 36
-			height: Kirigami.Units.gridUnit * 36
+			source: "images/framework-wordmark.svgz"
 			// The fillMode will preserve aspect ratio and fit within these bounds
+			fillMode: Image.PreserveAspectFit
+			sourceSize.height: size
+			sourceSize.width: size
 		}
 
 		// spin the framework cog
