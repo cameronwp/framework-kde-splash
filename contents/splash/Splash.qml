@@ -41,16 +41,28 @@ Rectangle {
 			// The fillMode will preserve aspect ratio and fit within these bounds
 		}
 
-
-		// KDE's built-in busy indicator
-		PlasmaComponents3.BusyIndicator {
+		// spin the framework cog
+		Image {
 			id: busyIndicator
 			// Position in the middle of the remaining space below the logo
-			y: parent.height - (parent.height - logo.y) / 2
+			y: parent.height - (parent.height - logo.y) / 2 - height/2
 			anchors.horizontalCenter: parent.horizontalCenter
-			width: Kirigami.Units.gridUnit * 3
-			height: Kirigami.Units.gridUnit * 3
-			// running: true (enabled by default)
+			asynchronous: true
+			source: "images/framework-icon.svgz"
+			sourceSize.height: Kirigami.Units.gridUnit * 2
+			sourceSize.width: Kirigami.Units.gridUnit * 2
+			RotationAnimator on rotation {
+				id: rotationAnimator
+				from: 0
+				to: 360
+				// Not using a standard duration value because we don't want the
+				// animation to spin faster or slower based on the user's animation
+				// scaling preferences; it doesn't make sense in this context
+				duration: 2000
+				loops: Animation.Infinite
+				// Don't want it to animate at all if the user has disabled animations
+				running: Kirigami.Units.longDuration > 1
+			}
 		}
 	}
 
